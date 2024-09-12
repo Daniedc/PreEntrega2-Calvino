@@ -1,0 +1,32 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* mobile */
+
+@media screen and (min-widht:320px){
+    .contenedor-mision{
+        grid-template-rows: 10% 80% 10%;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    main{
+        grid-area: main;
+        background-color: #DBDBDB;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+}

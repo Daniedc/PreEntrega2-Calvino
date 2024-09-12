@@ -1,0 +1,184 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* grillas */
+
+.contenedor-trabajos{
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "main main main main main"
+    "section section section section section"
+    "frase frase frase frase frase"
+    "footer footer footer footer footer";
+    grid-template-rows: 10% 100% 80% 30% 15%;
+    height: 100vh;
+}
+
+header{
+    grid-area: header;
+    background-color: #5352EB;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    height: 100%;
+    padding: 10px;
+}
+
+header a{
+    color: #DBDBDB;
+}
+
+header nav{
+    justify-content: center;
+    padding: 30px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    font-family: montserrat;
+    font-weight: 400;
+}
+
+main{
+    grid-area: main;
+}
+
+.banner-trabajos{
+    background-image: url(../img/banner-trabajos.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-trabajos p{
+    font-family: crafter;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    font-size: 80px;
+}
+
+.banner-trabajos span{
+    font-family: roboto mono;
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cualidades{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    gap: 80px;
+}
+
+.card-01 img{
+    width: 60px;
+    padding-bottom: 20px;
+}
+
+.card-body{
+    text-align: justify;
+    color: #DBDBDB;
+    font-family: montserrat;
+}
+
+.card-02 img{
+    width: 60px;
+    padding-bottom: 20px;
+}
+
+.card-body{
+    text-align: justify;
+    color: #DBDBDB;
+    font-family: montserrat;
+}
+
+.card-03 img{
+    width: 60px;
+    padding-bottom: 20px;
+}
+
+.card-body{
+    text-align: justify;
+    color: #DBDBDB;
+    font-family: montserrat;
+}
+
+section{
+    grid-area: section;
+}
+
+.portfolio-seleccion{
+    background-image: url(../img/banner-seleccion.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+}
+
+.pastillas-trabajos span{
+    background-color: #E1F44B;
+    font-family: roboto mono;
+    color: black;
+    justify-items: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.img-trabajos{
+    display: flex;
+    overflow: auto;
+}
+
+.img-trabajos img{
+    width: 30%;
+    place-items: center;
+    margin-top: 200px;
+}
+
+.frase-ideas{
+    grid-area: frase;
+    background-image: url(../img/1x/fondo-frase-100.jpg);
+}
+
+.frase-ideas h3{
+    font-family: crafter;
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #5352EB;
+    text-align: center;
+    padding: 20px;
+}
+
+footer span{
+    font-family: crafter;
+    color: #DBDBDB;
+}
+
+.redes img{
+    width: 3%;
+}
